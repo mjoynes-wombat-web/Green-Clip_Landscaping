@@ -1,0 +1,121 @@
+body{
+    background: url(../img/retina_wood.jpg);
+    background-color:rgba(255,255,255,.5);
+    font-family: 'Josefin Sans', Arial, sans-serif;
+}
+
+.wrapper{
+    width:1000px;
+    margin:0 auto;
+}
+
+.wrapper > *{
+    margin:20px;
+}
+
+h1, h2, h3{
+    font-family: 'Pacifico', cursive;
+    color:#917042;
+}
+
+h4, h5, h6{
+    color:#b0b3b5;
+}
+
+h1{
+
+    font-size:3.8rem;
+}
+
+
+h4{
+    font-size:2.44rem;
+    font-weight:900;
+}
+
+.hide{
+    display:none;
+}
+
+header {
+    padding:10px 20px 20px 20px;
+    position: relative;
+    height:157px
+}
+
+#logo{
+    text-shadow: .3rem .3rem .5rem rgba(0, 0, 0, .4);
+    position: relative;
+    margin:0 0 0 30px;
+}
+
+#logo span{
+    position: absolute;
+    z-index: 4;
+    display: inline-block;
+    line-height: 40px;
+    bottom: 32px;
+}
+
+#logo span.growS{
+    transform: scale(1) !important;
+    color: hsl(135, 50%, 28%);
+    transition: 1s ease-in-out;
+}
+
+#logo span.green{
+    color: hsl(135, 50%, 28%);
+}
+
+#logo canvas{
+    position:absolute;
+    top:36px;
+    left:237px;
+}
+
+#logoTag{
+    display: none;
+    margin:-10px 0 0 47px;
+    padding:5px 20px;
+    border-top: 2px solid #b0b3b5;
+}
+
+#logoTag.nojQuery{
+    display: inline-block;
+    opacity:0;
+}
+
+#logoTag.fadeIn{
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+#logoTag.noCSSTrans{
+    display:inline-block;
+}
+
+#phoneNum{
+    position:absolute;
+    right:60px;
+    top:70px;
+    font-size:3rem;
+    margin:0;
+}
+
+#headerVid{
+    border-top:3px solid #b0b3b5;
+    border-bottom: 3px solid #b0b3b5;
+}
+
+#flowerVidCanvas{
+    opacity:.1;
+    display:inline-block;
+}
+
+#headerVid{
+    margin:0;
+    padding:0;
+    top:-202px;
+    position:relative;
+    z-index:-4;
+}
