@@ -34,12 +34,12 @@ function initSciss() {
 /********ANIMATION FOR S GETTING CUT AT THE END OF LOGO********/
 function cutLogoAnim() {
     setTimeout(function () { //1.2second timeout before running 'out' animations on s and scissors canvas.
-        $('#logo span').addClass('hinge animated'); //Add Ani.JS animations to 's' to make it drop.
+        $('#logo span').addClass('hingeBottomLeft animated'); //Add Ani.JS animations to 's' to make it drop.
         $('#logo canvas').addClass('zoomOutRight animated'); //Add Ani.JS animation to scissors canvas to zoom out right.
     }, 1200)
 
     setTimeout(function () { //1.2second timeout before running 'out' animations on s.
-        $('#logo span').addClass('hinge animated'); //Add Ani.JS animations to 's' to make it drop.
+        $('#logo span').addClass('hingeBottomLeft animated'); //Add Ani.JS animations to 's' to make it drop.
         
     }, 1200)
     
@@ -49,7 +49,7 @@ function cutLogoAnim() {
 
 
     setTimeout(function () { //3 second timeout before running prep for next animation.
-        $('#logo span').removeClass('hinge animated'); //Remove Ani.JS classes.
+        $('#logo span').removeClass('hingeBottomLeft animated'); //Remove Ani.JS classes.
         $('#logo span').attr('style', 'transform: scale(0); transform-origin:bottom left;') //Setup 's' for 'growing' animation
     }, 3000)
 
