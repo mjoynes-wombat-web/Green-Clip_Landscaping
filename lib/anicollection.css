@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 
 /*!
@@ -9,6 +10,9 @@ Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2014 Daniel Eden
 */
+=======
+/*base code*/
+>>>>>>> refs/remotes/origin/master
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -27,6 +31,7 @@ Copyright (c) 2014 Daniel Eden
   animation-duration: 2s;
 }
 
+<<<<<<< HEAD
 .duration-xs {
   -webkit-animation-duration: 0.25s;
   animation-duration: 0.25s;
@@ -195,12 +200,16 @@ or from end to start, or both.*/
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
+=======
+/*the animation definition*/
+>>>>>>> refs/remotes/origin/master
 
 @-webkit-keyframes bounce {
   0%, 100%, 20%, 53%, 80% {
     -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
     transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
     -webkit-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 0, 0);
   }
 
@@ -211,16 +220,35 @@ or from end to start, or both.*/
     transform: translate3d(0, -30px, 0);
   }
 
+=======
+    transform: translate3d(0, 0, 0)
+  }
+  40%,
+  43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   70% {
     -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     -webkit-transform: translate3d(0, -15px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -15px, 0);
   }
 
   90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
+=======
+    transform: translate3d(0, -15px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -230,22 +258,35 @@ or from end to start, or both.*/
     transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 0, 0);
   }
 
   40%, 43% {
+=======
+    transform: translate3d(0, 0, 0)
+  }
+  40%,
+  43% {
+>>>>>>> refs/remotes/origin/master
     -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     -webkit-transform: translate3d(0, -30px, 0);
     -ms-transform: translate3d(0, -30px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -30px, 0);
   }
 
+=======
+    transform: translate3d(0, -30px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   70% {
     -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     -webkit-transform: translate3d(0, -15px, 0);
     -ms-transform: translate3d(0, -15px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -15px, 0);
   }
 
@@ -253,6 +294,14 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, -4px, 0);
     -ms-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
+=======
+    transform: translate3d(0, -15px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -261,6 +310,7 @@ or from end to start, or both.*/
   animation-name: bounce;
   -webkit-transform-origin: center bottom;
   -ms-transform-origin: center bottom;
+<<<<<<< HEAD
   transform-origin: center bottom;
 }
 
@@ -283,21 +333,42 @@ or from end to start, or both.*/
 
   25%, 75% {
     opacity: 0;
+=======
+  transform-origin: center bottom
+}
+
+@-webkit-keyframes flash {
+  0%, 100%, 50% {
+    opacity: 1
+  }
+  25%,
+  75% {
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes flash {
   0%, 100%, 50% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
   25%, 75% {
     opacity: 0;
+=======
+    opacity: 1
+  }
+  25%,
+  75% {
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .flash {
   -webkit-animation-name: flash;
+<<<<<<< HEAD
   animation-name: flash;
 }
 
@@ -327,6 +398,23 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+=======
+  animation-name: flash
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -334,6 +422,7 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
+<<<<<<< HEAD
     transform: scale3d(1, 1, 1);
   }
 
@@ -347,11 +436,25 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+=======
+    transform: scale3d(1, 1, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    -ms-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .pulse {
   -webkit-animation-name: pulse;
+<<<<<<< HEAD
   animation-name: pulse;
 }
 
@@ -401,6 +504,39 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+=======
+  animation-name: pulse
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1)
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1)
+  }
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1)
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -408,6 +544,7 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
+<<<<<<< HEAD
     transform: scale3d(1, 1, 1);
   }
 
@@ -445,11 +582,45 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+=======
+    transform: scale3d(1, 1, 1)
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, .75, 1);
+    -ms-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1)
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, .85, 1);
+    -ms-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1)
+  }
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    -ms-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1)
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    -ms-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rubberBand {
   -webkit-animation-name: rubberBand;
+<<<<<<< HEAD
   animation-name: rubberBand;
 }
 
@@ -479,6 +650,30 @@ or from end to start, or both.*/
   20%, 40%, 60%, 80% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
+=======
+  animation-name: rubberBand
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0)
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -486,6 +681,7 @@ or from end to start, or both.*/
   0%, 100% {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 0, 0);
   }
 
@@ -499,11 +695,32 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(10px, 0, 0);
     -ms-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
+=======
+    transform: translate3d(0, 0, 0)
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0)
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    -ms-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .shake {
   -webkit-animation-name: shake;
+<<<<<<< HEAD
   animation-name: shake;
 }
 
@@ -543,6 +760,31 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
+=======
+  animation-name: shake
+}
+
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg)
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg)
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg)
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg)
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -550,6 +792,7 @@ or from end to start, or both.*/
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 15deg);
     -ms-transform: rotate3d(0, 0, 1, 15deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, 15deg);
   }
 
@@ -575,6 +818,29 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     -ms-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
+=======
+    transform: rotate3d(0, 0, 1, 15deg)
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    -ms-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg)
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    -ms-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg)
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    -ms-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg)
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    -ms-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -583,6 +849,7 @@ or from end to start, or both.*/
   -ms-transform-origin: top center;
   transform-origin: top center;
   -webkit-animation-name: swing;
+<<<<<<< HEAD
   animation-name: swing;
 }
 
@@ -622,6 +889,37 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+=======
+  animation-name: swing
+}
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -629,6 +927,7 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
+<<<<<<< HEAD
     transform: scale3d(1, 1, 1);
   }
 
@@ -654,11 +953,41 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+=======
+    transform: scale3d(1, 1, 1)
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .tada {
   -webkit-animation-name: tada;
+<<<<<<< HEAD
   animation-name: tada;
 }
 
@@ -708,6 +1037,39 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: none;
     transform: none;
+=======
+  animation-name: tada
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -715,6 +1077,7 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
   }
 
@@ -752,11 +1115,45 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+=======
+    transform: none
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    -ms-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    -ms-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  }
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .wobble {
   -webkit-animation-name: wobble;
+<<<<<<< HEAD
   animation-name: wobble;
 }
 
@@ -809,19 +1206,61 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+=======
+  animation-name: wobble
+}
+
+@-webkit-keyframes bounceIn {
+  0%, 100%, 20%, 40%, 60%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03)
+  }
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes bounceIn {
   0%, 100%, 20%, 40%, 60%, 80% {
     -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+<<<<<<< HEAD
     transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
+=======
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+>>>>>>> refs/remotes/origin/master
   0% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
     -ms-transform: scale3d(.3, .3, .3);
+<<<<<<< HEAD
     transform: scale3d(.3, .3, .3);
   }
 
@@ -837,10 +1276,25 @@ or from end to start, or both.*/
     transform: scale3d(.9, .9, .9);
   }
 
+=======
+    transform: scale3d(.3, .3, .3)
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    -ms-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(1.03, 1.03, 1.03);
     -ms-transform: scale3d(1.03, 1.03, 1.03);
+<<<<<<< HEAD
     transform: scale3d(1.03, 1.03, 1.03);
   }
 
@@ -850,16 +1304,30 @@ or from end to start, or both.*/
     transform: scale3d(.97, .97, .97);
   }
 
+=======
+    transform: scale3d(1.03, 1.03, 1.03)
+  }
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    -ms-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
+<<<<<<< HEAD
     transform: scale3d(1, 1, 1);
+=======
+    transform: scale3d(1, 1, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceIn {
   -webkit-animation-name: bounceIn;
+<<<<<<< HEAD
   animation-name: bounceIn;
 }
 
@@ -906,26 +1374,68 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: none;
     transform: none;
+=======
+  animation-name: bounceIn
+}
+
+@-webkit-keyframes bounceInDown {
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0)
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes bounceInDown {
   0%, 100%, 60%, 75%, 90% {
     -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+<<<<<<< HEAD
     transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
+=======
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+>>>>>>> refs/remotes/origin/master
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -3000px, 0);
     -ms-transform: translate3d(0, -3000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -3000px, 0);
   }
 
+=======
+    transform: translate3d(0, -3000px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, 25px, 0);
     -ms-transform: translate3d(0, 25px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 25px, 0);
   }
 
@@ -945,11 +1455,30 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+=======
+    transform: translate3d(0, 25px, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0)
+  }
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
+<<<<<<< HEAD
   animation-name: bounceInDown;
 }
 
@@ -996,26 +1525,68 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: none;
     transform: none;
+=======
+  animation-name: bounceInDown
+}
+
+@-webkit-keyframes bounceInLeft {
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0)
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes bounceInLeft {
   0%, 100%, 60%, 75%, 90% {
     -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+<<<<<<< HEAD
     transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
+=======
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+>>>>>>> refs/remotes/origin/master
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-3000px, 0, 0);
     -ms-transform: translate3d(-3000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-3000px, 0, 0);
   }
 
+=======
+    transform: translate3d(-3000px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: translate3d(25px, 0, 0);
     -ms-transform: translate3d(25px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(25px, 0, 0);
   }
 
@@ -1035,11 +1606,30 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+=======
+    transform: translate3d(25px, 0, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    -ms-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0)
+  }
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
+<<<<<<< HEAD
   animation-name: bounceInLeft;
 }
 
@@ -1086,26 +1676,68 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: none;
     transform: none;
+=======
+  animation-name: bounceInLeft
+}
+
+@-webkit-keyframes bounceInRight {
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0)
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes bounceInRight {
   0%, 100%, 60%, 75%, 90% {
     -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+<<<<<<< HEAD
     transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
+=======
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+>>>>>>> refs/remotes/origin/master
   0% {
     opacity: 0;
     -webkit-transform: translate3d(3000px, 0, 0);
     -ms-transform: translate3d(3000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(3000px, 0, 0);
   }
 
+=======
+    transform: translate3d(3000px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: translate3d(-25px, 0, 0);
     -ms-transform: translate3d(-25px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-25px, 0, 0);
   }
 
@@ -1125,11 +1757,30 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+=======
+    transform: translate3d(-25px, 0, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    -ms-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    -ms-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0)
+  }
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceInRight {
   -webkit-animation-name: bounceInRight;
+<<<<<<< HEAD
   animation-name: bounceInRight;
 }
 
@@ -1176,26 +1827,68 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+  animation-name: bounceInRight
+}
+
+@-webkit-keyframes bounceInUp {
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0)
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes bounceInUp {
   0%, 100%, 60%, 75%, 90% {
     -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+<<<<<<< HEAD
     transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
+=======
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+>>>>>>> refs/remotes/origin/master
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 3000px, 0);
     -ms-transform: translate3d(0, 3000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 3000px, 0);
   }
 
+=======
+    transform: translate3d(0, 3000px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
     -ms-transform: translate3d(0, -20px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -20px, 0);
   }
 
@@ -1215,11 +1908,30 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    transform: translate3d(0, -20px, 0)
+  }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    -ms-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0)
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceInUp {
   -webkit-animation-name: bounceInUp;
+<<<<<<< HEAD
   animation-name: bounceInUp;
 }
 
@@ -1251,6 +1963,26 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
     transform: scale3d(.3, .3, .3);
+=======
+  animation-name: bounceInUp
+}
+
+@-webkit-keyframes bounceOut {
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9)
+  }
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1258,6 +1990,7 @@ or from end to start, or both.*/
   20% {
     -webkit-transform: scale3d(.9, .9, .9);
     -ms-transform: scale3d(.9, .9, .9);
+<<<<<<< HEAD
     transform: scale3d(.9, .9, .9);
   }
 
@@ -1268,16 +2001,32 @@ or from end to start, or both.*/
     transform: scale3d(1.1, 1.1, 1.1);
   }
 
+=======
+    transform: scale3d(.9, .9, .9)
+  }
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
     -ms-transform: scale3d(.3, .3, .3);
+<<<<<<< HEAD
     transform: scale3d(.3, .3, .3);
+=======
+    transform: scale3d(.3, .3, .3)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceOut {
   -webkit-animation-name: bounceOut;
+<<<<<<< HEAD
   animation-name: bounceOut;
 }
 
@@ -1309,6 +2058,26 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0);
+=======
+  animation-name: bounceOut
+}
+
+@-webkit-keyframes bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0)
+  }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1316,6 +2085,7 @@ or from end to start, or both.*/
   20% {
     -webkit-transform: translate3d(0, 10px, 0);
     -ms-transform: translate3d(0, 10px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 10px, 0);
   }
 
@@ -1326,16 +2096,32 @@ or from end to start, or both.*/
     transform: translate3d(0, -20px, 0);
   }
 
+=======
+    transform: translate3d(0, 10px, 0)
+  }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    -ms-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     -ms-transform: translate3d(0, 2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 2000px, 0);
+=======
+    transform: translate3d(0, 2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceOutDown {
   -webkit-animation-name: bounceOutDown;
+<<<<<<< HEAD
   animation-name: bounceOutDown;
 }
 
@@ -1351,10 +2137,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: bounceOutDown
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes bounceOutLeft {
   20% {
     opacity: 1;
     -webkit-transform: translate3d(20px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(20px, 0, 0);
   }
 
@@ -1362,6 +2154,14 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0);
+=======
+    transform: translate3d(20px, 0, 0)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1370,19 +2170,29 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: translate3d(20px, 0, 0);
     -ms-transform: translate3d(20px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(20px, 0, 0);
   }
 
+=======
+    transform: translate3d(20px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     -ms-transform: translate3d(-2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-2000px, 0, 0);
+=======
+    transform: translate3d(-2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceOutLeft {
   -webkit-animation-name: bounceOutLeft;
+<<<<<<< HEAD
   animation-name: bounceOutLeft;
 }
 
@@ -1398,10 +2208,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: bounceOutLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes bounceOutRight {
   20% {
     opacity: 1;
     -webkit-transform: translate3d(-20px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-20px, 0, 0);
   }
 
@@ -1409,6 +2225,14 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0);
+=======
+    transform: translate3d(-20px, 0, 0)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1417,19 +2241,29 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: translate3d(-20px, 0, 0);
     -ms-transform: translate3d(-20px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-20px, 0, 0);
   }
 
+=======
+    transform: translate3d(-20px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     -ms-transform: translate3d(2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(2000px, 0, 0);
+=======
+    transform: translate3d(2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceOutRight {
   -webkit-animation-name: bounceOutRight;
+<<<<<<< HEAD
   animation-name: bounceOutRight;
 }
 
@@ -1461,6 +2295,26 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0);
+=======
+  animation-name: bounceOutRight
+}
+
+@-webkit-keyframes bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0)
+  }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1468,6 +2322,7 @@ or from end to start, or both.*/
   20% {
     -webkit-transform: translate3d(0, -10px, 0);
     -ms-transform: translate3d(0, -10px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -10px, 0);
   }
 
@@ -1478,16 +2333,32 @@ or from end to start, or both.*/
     transform: translate3d(0, 20px, 0);
   }
 
+=======
+    transform: translate3d(0, -10px, 0)
+  }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    -ms-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     -ms-transform: translate3d(0, -2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -2000px, 0);
+=======
+    transform: translate3d(0, -2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .bounceOutUp {
   -webkit-animation-name: bounceOutUp;
+<<<<<<< HEAD
   animation-name: bounceOutUp;
 }
 
@@ -1510,21 +2381,40 @@ or from end to start, or both.*/
 
   100% {
     opacity: 1;
+=======
+  animation-name: bounceOutUp
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeIn {
   0% {
+<<<<<<< HEAD
     opacity: 0;
   }
 
   100% {
     opacity: 1;
+=======
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeIn {
   -webkit-animation-name: fadeIn;
+<<<<<<< HEAD
   animation-name: fadeIn;
 }
 
@@ -1540,10 +2430,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeIn
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -100%, 0);
   }
 
@@ -1551,6 +2447,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(0, -100%, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1559,19 +2463,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     -ms-transform: translate3d(0, -100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -100%, 0);
   }
 
+=======
+    transform: translate3d(0, -100%, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
+<<<<<<< HEAD
   animation-name: fadeInDown;
 }
 
@@ -1587,10 +2501,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeInDown
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInDownBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -2000px, 0);
   }
 
@@ -1598,6 +2518,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(0, -2000px, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1606,19 +2534,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     -ms-transform: translate3d(0, -2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -2000px, 0);
   }
 
+=======
+    transform: translate3d(0, -2000px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
+<<<<<<< HEAD
   animation-name: fadeInDownBig;
 }
 
@@ -1634,10 +2572,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeInDownBig
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-100%, 0, 0);
   }
 
@@ -1645,6 +2589,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(-100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1653,19 +2605,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-100%, 0, 0);
   }
 
+=======
+    transform: translate3d(-100%, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
+<<<<<<< HEAD
   animation-name: fadeInLeft;
 }
 
@@ -1681,10 +2643,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeInLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInLeftBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-2000px, 0, 0);
   }
 
@@ -1692,6 +2660,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(-2000px, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1700,19 +2676,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     -ms-transform: translate3d(-2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-2000px, 0, 0);
   }
 
+=======
+    transform: translate3d(-2000px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
+<<<<<<< HEAD
   animation-name: fadeInLeftBig;
 }
 
@@ -1728,10 +2714,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeInLeftBig
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(100%, 0, 0);
   }
 
@@ -1739,6 +2731,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1747,19 +2747,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(100%, 0, 0);
   }
 
+=======
+    transform: translate3d(100%, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
+<<<<<<< HEAD
   animation-name: fadeInRight;
 }
 
@@ -1775,10 +2785,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeInRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInRightBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(2000px, 0, 0);
   }
 
@@ -1786,6 +2802,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(2000px, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1794,19 +2818,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     -ms-transform: translate3d(2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(2000px, 0, 0);
   }
 
+=======
+    transform: translate3d(2000px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
+<<<<<<< HEAD
   animation-name: fadeInRightBig;
 }
 
@@ -1822,10 +2856,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeInRightBig
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 100%, 0);
   }
 
@@ -1833,6 +2873,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(0, 100%, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1841,19 +2889,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 100%, 0);
   }
 
+=======
+    transform: translate3d(0, 100%, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
+<<<<<<< HEAD
   animation-name: fadeInUp;
 }
 
@@ -1869,10 +2927,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeInUp
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes fadeInUpBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 2000px, 0);
   }
 
@@ -1880,6 +2944,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(0, 2000px, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -1888,19 +2960,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     -ms-transform: translate3d(0, 2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 2000px, 0);
   }
 
+=======
+    transform: translate3d(0, 2000px, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
+<<<<<<< HEAD
   animation-name: fadeInUpBig;
 }
 
@@ -1923,21 +3005,40 @@ or from end to start, or both.*/
 
   100% {
     opacity: 0;
+=======
+  animation-name: fadeInUpBig
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOut {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
   100% {
     opacity: 0;
+=======
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOut {
   -webkit-animation-name: fadeOut;
+<<<<<<< HEAD
   animation-name: fadeOut;
 }
 
@@ -1962,24 +3063,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+=======
+  animation-name: fadeOut
+}
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutDown {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 100%, 0);
+=======
+    transform: translate3d(0, 100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
+<<<<<<< HEAD
   animation-name: fadeOutDown;
 }
 
@@ -2004,24 +3128,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0);
+=======
+  animation-name: fadeOutDown
+}
+
+@-webkit-keyframes fadeOutDownBig {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutDownBig {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     -ms-transform: translate3d(0, 2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 2000px, 0);
+=======
+    transform: translate3d(0, 2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutDownBig {
   -webkit-animation-name: fadeOutDownBig;
+<<<<<<< HEAD
   animation-name: fadeOutDownBig;
 }
 
@@ -2046,24 +3193,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+=======
+  animation-name: fadeOutDownBig
+}
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutLeft {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-100%, 0, 0);
+=======
+    transform: translate3d(-100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
+<<<<<<< HEAD
   animation-name: fadeOutLeft;
 }
 
@@ -2088,24 +3258,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0);
+=======
+  animation-name: fadeOutLeft
+}
+
+@-webkit-keyframes fadeOutLeftBig {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutLeftBig {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     -ms-transform: translate3d(-2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-2000px, 0, 0);
+=======
+    transform: translate3d(-2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutLeftBig {
   -webkit-animation-name: fadeOutLeftBig;
+<<<<<<< HEAD
   animation-name: fadeOutLeftBig;
 }
 
@@ -2130,24 +3323,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+=======
+  animation-name: fadeOutLeftBig
+}
+
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutRight {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(100%, 0, 0);
+=======
+    transform: translate3d(100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
+<<<<<<< HEAD
   animation-name: fadeOutRight;
 }
 
@@ -2172,24 +3388,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0);
+=======
+  animation-name: fadeOutRight
+}
+
+@-webkit-keyframes fadeOutRightBig {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutRightBig {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     -ms-transform: translate3d(2000px, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(2000px, 0, 0);
+=======
+    transform: translate3d(2000px, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutRightBig {
   -webkit-animation-name: fadeOutRightBig;
+<<<<<<< HEAD
   animation-name: fadeOutRightBig;
 }
 
@@ -2214,24 +3453,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+=======
+  animation-name: fadeOutRightBig
+}
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutUp {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     -ms-transform: translate3d(0, -100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -100%, 0);
+=======
+    transform: translate3d(0, -100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutUp {
   -webkit-animation-name: fadeOutUp;
+<<<<<<< HEAD
   animation-name: fadeOutUp;
 }
 
@@ -2256,24 +3518,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0);
+=======
+  animation-name: fadeOutUp
+}
+
+@-webkit-keyframes fadeOutUpBig {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes fadeOutUpBig {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     -ms-transform: translate3d(0, -2000px, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -2000px, 0);
+=======
+    transform: translate3d(0, -2000px, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
+<<<<<<< HEAD
   animation-name: fadeOutUpBig;
 }
 
@@ -2289,40 +3574,69 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: fadeOutUpBig
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes flip {
   0% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
+<<<<<<< HEAD
     animation-timing-function: ease-out;
   }
 
+=======
+    animation-timing-function: ease-out
+  }
+>>>>>>> refs/remotes/origin/master
   40% {
     -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
+<<<<<<< HEAD
     animation-timing-function: ease-out;
   }
 
+=======
+    animation-timing-function: ease-out
+  }
+>>>>>>> refs/remotes/origin/master
   50% {
     -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
+<<<<<<< HEAD
     animation-timing-function: ease-in;
   }
 
+=======
+    animation-timing-function: ease-in
+  }
+>>>>>>> refs/remotes/origin/master
   80% {
     -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
     transform: perspective(400px) scale3d(.95, .95, .95);
     -webkit-animation-timing-function: ease-in;
+<<<<<<< HEAD
     animation-timing-function: ease-in;
   }
 
+=======
+    animation-timing-function: ease-in
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
     -webkit-animation-timing-function: ease-in;
+<<<<<<< HEAD
     animation-timing-function: ease-in;
+=======
+    animation-timing-function: ease-in
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2332,39 +3646,63 @@ or from end to start, or both.*/
     -ms-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
+<<<<<<< HEAD
     animation-timing-function: ease-out;
   }
 
+=======
+    animation-timing-function: ease-out
+  }
+>>>>>>> refs/remotes/origin/master
   40% {
     -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     -ms-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
+<<<<<<< HEAD
     animation-timing-function: ease-out;
   }
 
+=======
+    animation-timing-function: ease-out
+  }
+>>>>>>> refs/remotes/origin/master
   50% {
     -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
     -ms-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
+<<<<<<< HEAD
     animation-timing-function: ease-in;
   }
 
+=======
+    animation-timing-function: ease-in
+  }
+>>>>>>> refs/remotes/origin/master
   80% {
     -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
     -ms-transform: perspective(400px) scale3d(.95, .95, .95);
     transform: perspective(400px) scale3d(.95, .95, .95);
     -webkit-animation-timing-function: ease-in;
+<<<<<<< HEAD
     animation-timing-function: ease-in;
   }
 
+=======
+    animation-timing-function: ease-in
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
     transform: perspective(400px);
     -webkit-animation-timing-function: ease-in;
+<<<<<<< HEAD
     animation-timing-function: ease-in;
+=======
+    animation-timing-function: ease-in
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2373,6 +3711,7 @@ or from end to start, or both.*/
   -ms-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
+<<<<<<< HEAD
   animation-name: flip;
 }
 
@@ -2388,19 +3727,30 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: flip
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes flipInX {
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   40% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
+<<<<<<< HEAD
     transition-timing-function: ease-in;
   }
 
@@ -2418,6 +3768,22 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
+=======
+    transition-timing-function: ease-in
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2428,21 +3794,32 @@ or from end to start, or both.*/
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   40% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
+<<<<<<< HEAD
     transition-timing-function: ease-in;
   }
 
+=======
+    transition-timing-function: ease-in
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+<<<<<<< HEAD
     opacity: 1;
   }
 
@@ -2456,6 +3833,19 @@ or from end to start, or both.*/
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
     transform: perspective(400px);
+=======
+    opacity: 1
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2464,6 +3854,7 @@ or from end to start, or both.*/
   -ms-backface-visibility: visible!important;
   backface-visibility: visible!important;
   -webkit-animation-name: flipInX;
+<<<<<<< HEAD
   animation-name: flipInX;
 }
 
@@ -2479,19 +3870,30 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: flipInX
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes flipInY {
   0% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   40% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
+<<<<<<< HEAD
     transition-timing-function: ease-in;
   }
 
@@ -2509,6 +3911,22 @@ or from end to start, or both.*/
   100% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
+=======
+    transition-timing-function: ease-in
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2519,21 +3937,32 @@ or from end to start, or both.*/
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   40% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     -ms-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
+<<<<<<< HEAD
     transition-timing-function: ease-in;
   }
 
+=======
+    transition-timing-function: ease-in
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
     -ms-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+<<<<<<< HEAD
     opacity: 1;
   }
 
@@ -2547,6 +3976,19 @@ or from end to start, or both.*/
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
     transform: perspective(400px);
+=======
+    opacity: 1
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2555,6 +3997,7 @@ or from end to start, or both.*/
   -ms-backface-visibility: visible!important;
   backface-visibility: visible!important;
   -webkit-animation-name: flipInY;
+<<<<<<< HEAD
   animation-name: flipInY;
 }
 
@@ -2586,6 +4029,25 @@ or from end to start, or both.*/
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
+=======
+  animation-name: flipInY
+}
+
+@-webkit-keyframes flipOutX {
+  0% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px)
+  }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2593,21 +4055,35 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
+<<<<<<< HEAD
     transform: perspective(400px);
   }
 
+=======
+    transform: perspective(400px)
+  }
+>>>>>>> refs/remotes/origin/master
   30% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2616,6 +4092,7 @@ or from end to start, or both.*/
   animation-name: flipOutX;
   -webkit-backface-visibility: visible!important;
   -ms-backface-visibility: visible!important;
+<<<<<<< HEAD
   backface-visibility: visible!important;
 }
 
@@ -2647,6 +4124,25 @@ or from end to start, or both.*/
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
+=======
+  backface-visibility: visible!important
+}
+
+@-webkit-keyframes flipOutY {
+  0% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px)
+  }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2654,21 +4150,35 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
+<<<<<<< HEAD
     transform: perspective(400px);
   }
 
+=======
+    transform: perspective(400px)
+  }
+>>>>>>> refs/remotes/origin/master
   30% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
     -ms-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     -ms-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2677,6 +4187,7 @@ or from end to start, or both.*/
   -ms-backface-visibility: visible!important;
   backface-visibility: visible!important;
   -webkit-animation-name: flipOutY;
+<<<<<<< HEAD
   animation-name: flipOutY;
 }
 
@@ -2692,10 +4203,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: flipOutY
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes lightSpeedIn {
   0% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
@@ -2715,6 +4232,24 @@ or from end to start, or both.*/
     -webkit-transform: none;
     transform: none;
     opacity: 1;
+=======
+    opacity: 0
+  }
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1
+  }
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2723,28 +4258,47 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     -ms-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     -webkit-transform: skewX(20deg);
     -ms-transform: skewX(20deg);
     transform: skewX(20deg);
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   80% {
     -webkit-transform: skewX(-5deg);
     -ms-transform: skewX(-5deg);
     transform: skewX(-5deg);
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2752,6 +4306,7 @@ or from end to start, or both.*/
   -webkit-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn;
   -webkit-animation-timing-function: ease-out;
+<<<<<<< HEAD
   animation-timing-function: ease-out;
 }
 
@@ -2776,19 +4331,41 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0;
+=======
+  animation-timing-function: ease-out
+}
+
+@-webkit-keyframes lightSpeedOut {
+  0% {
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes lightSpeedOut {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
     -ms-transform: translate3d(100%, 0, 0) skewX(30deg);
     transform: translate3d(100%, 0, 0) skewX(30deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2796,6 +4373,7 @@ or from end to start, or both.*/
   -webkit-animation-name: lightSpeedOut;
   animation-name: lightSpeedOut;
   -webkit-animation-timing-function: ease-in;
+<<<<<<< HEAD
   animation-timing-function: ease-in;
 }
 
@@ -2811,19 +4389,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-timing-function: ease-in
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, -200deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, -200deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2834,21 +4426,31 @@ or from end to start, or both.*/
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     -ms-transform: rotate3d(0, 0, 1, -200deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, -200deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, -200deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotate {
   -webkit-animation-name: rotate;
+<<<<<<< HEAD
   animation-name: rotate;
 }
 
@@ -2864,19 +4466,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotate
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateDownLeft {
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, -45deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, -45deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2887,21 +4503,31 @@ or from end to start, or both.*/
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     -ms-transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, -45deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, -45deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateDownLeft {
   -webkit-animation-name: rotateDownLeft;
+<<<<<<< HEAD
   animation-name: rotateDownLeft;
 }
 
@@ -2917,19 +4543,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateDownLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateDownRight {
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, 45deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, 45deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2940,21 +4580,31 @@ or from end to start, or both.*/
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     -ms-transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, 45deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, 45deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateDownRight {
   -webkit-animation-name: rotateDownRight;
+<<<<<<< HEAD
   animation-name: rotateDownRight;
 }
 
@@ -2970,19 +4620,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateDownRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateUpLeft {
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, 45deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, 45deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -2993,21 +4657,31 @@ or from end to start, or both.*/
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     -ms-transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, 45deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, 45deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateUpLeft {
   -webkit-animation-name: rotateUpLeft;
+<<<<<<< HEAD
   animation-name: rotateUpLeft;
 }
 
@@ -3023,19 +4697,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateUpLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateUpRight {
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, -90deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, -90deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3046,21 +4734,31 @@ or from end to start, or both.*/
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
     -ms-transform: rotate3d(0, 0, 1, -90deg);
+<<<<<<< HEAD
     transform: rotate3d(0, 0, 1, -90deg);
   }
 
+=======
+    transform: rotate3d(0, 0, 1, -90deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateUpRight {
   -webkit-animation-name: rotateUpRight;
+<<<<<<< HEAD
   animation-name: rotateUpRight;
 }
 
@@ -3076,21 +4774,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateUpRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateIn {
   0% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3102,9 +4814,14 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     -ms-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -3112,12 +4829,17 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateIn {
   -webkit-animation-name: rotateIn;
+<<<<<<< HEAD
   animation-name: rotateIn;
 }
 
@@ -3133,21 +4855,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateIn
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateInDownLeft {
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3159,9 +4895,14 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     -ms-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3169,12 +4910,17 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateInDownLeft {
   -webkit-animation-name: rotateInDownLeft;
+<<<<<<< HEAD
   animation-name: rotateInDownLeft;
 }
 
@@ -3190,21 +4936,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateInDownLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateInDownRight {
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3216,9 +4976,14 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     -ms-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3226,12 +4991,17 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateInDownRight {
   -webkit-animation-name: rotateInDownRight;
+<<<<<<< HEAD
   animation-name: rotateInDownRight;
 }
 
@@ -3247,21 +5017,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateInDownRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateInUpLeft {
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3273,9 +5057,14 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     -ms-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3283,12 +5072,17 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateInUpLeft {
   -webkit-animation-name: rotateInUpLeft;
+<<<<<<< HEAD
   animation-name: rotateInUpLeft;
 }
 
@@ -3304,21 +5098,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateInUpLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateInUpRight {
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
     transform: rotate3d(0, 0, 1, -90deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3330,9 +5138,14 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
     -ms-transform: rotate3d(0, 0, 1, -90deg);
     transform: rotate3d(0, 0, 1, -90deg);
+<<<<<<< HEAD
     opacity: 0;
   }
 
+=======
+    opacity: 0
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3340,12 +5153,17 @@ or from end to start, or both.*/
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateInUpRight {
   -webkit-animation-name: rotateInUpRight;
+<<<<<<< HEAD
   animation-name: rotateInUpRight;
 }
 
@@ -3361,19 +5179,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateInUpRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateOut {
   0% {
     -webkit-transform-origin: center;
     transform-origin: center;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, 200deg);
     transform: rotate3d(0, 0, 1, 200deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3382,9 +5214,14 @@ or from end to start, or both.*/
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -3392,12 +5229,17 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, 200deg);
     -ms-transform: rotate3d(0, 0, 1, 200deg);
     transform: rotate3d(0, 0, 1, 200deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateOut {
   -webkit-animation-name: rotateOut;
+<<<<<<< HEAD
   animation-name: rotateOut;
 }
 
@@ -3413,19 +5255,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateOut
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateOutDownLeft {
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3434,9 +5290,14 @@ or from end to start, or both.*/
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
     transform-origin: left bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3444,12 +5305,17 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     -ms-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateOutDownLeft {
   -webkit-animation-name: rotateOutDownLeft;
+<<<<<<< HEAD
   animation-name: rotateOutDownLeft;
 }
 
@@ -3465,19 +5331,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateOutDownLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateOutDownRight {
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3486,9 +5366,14 @@ or from end to start, or both.*/
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
     transform-origin: right bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3496,12 +5381,17 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     -ms-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateOutDownRight {
   -webkit-animation-name: rotateOutDownRight;
+<<<<<<< HEAD
   animation-name: rotateOutDownRight;
 }
 
@@ -3517,19 +5407,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateOutDownRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateOutUpLeft {
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3538,9 +5442,14 @@ or from end to start, or both.*/
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
     transform-origin: left bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3548,12 +5457,17 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     -ms-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateOutUpLeft {
   -webkit-animation-name: rotateOutUpLeft;
+<<<<<<< HEAD
   animation-name: rotateOutUpLeft;
 }
 
@@ -3569,19 +5483,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateOutUpLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rotateOutUpRight {
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 90deg);
     transform: rotate3d(0, 0, 1, 90deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3590,9 +5518,14 @@ or from end to start, or both.*/
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
     transform-origin: right bottom;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3600,12 +5533,17 @@ or from end to start, or both.*/
     -webkit-transform: rotate3d(0, 0, 1, 90deg);
     -ms-transform: rotate3d(0, 0, 1, 90deg);
     transform: rotate3d(0, 0, 1, 90deg);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rotateOutUpRight {
   -webkit-animation-name: rotateOutUpRight;
+<<<<<<< HEAD
   animation-name: rotateOutUpRight;
 }
 
@@ -3621,30 +5559,50 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rotateOutUpRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes hinge {
   0% {
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-animation-timing-function: ease-in-out;
+<<<<<<< HEAD
     animation-timing-function: ease-in-out;
   }
 
   20%, 60% {
+=======
+    animation-timing-function: ease-in-out
+  }
+  20%,
+  60% {
+>>>>>>> refs/remotes/origin/master
     -webkit-transform: rotate3d(0, 0, 1, 80deg);
     transform: rotate3d(0, 0, 1, 80deg);
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-animation-timing-function: ease-in-out;
+<<<<<<< HEAD
     animation-timing-function: ease-in-out;
   }
 
   40%, 80% {
+=======
+    animation-timing-function: ease-in-out
+  }
+  40%,
+  80% {
+>>>>>>> refs/remotes/origin/master
     -webkit-transform: rotate3d(0, 0, 1, 60deg);
     transform: rotate3d(0, 0, 1, 60deg);
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
+<<<<<<< HEAD
     opacity: 1;
   }
 
@@ -3652,6 +5610,14 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, 700px, 0);
     transform: translate3d(0, 700px, 0);
     opacity: 0;
+=======
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3661,10 +5627,17 @@ or from end to start, or both.*/
     -ms-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-animation-timing-function: ease-in-out;
+<<<<<<< HEAD
     animation-timing-function: ease-in-out;
   }
 
   20%, 60% {
+=======
+    animation-timing-function: ease-in-out
+  }
+  20%,
+  60% {
+>>>>>>> refs/remotes/origin/master
     -webkit-transform: rotate3d(0, 0, 1, 80deg);
     -ms-transform: rotate3d(0, 0, 1, 80deg);
     transform: rotate3d(0, 0, 1, 80deg);
@@ -3672,10 +5645,17 @@ or from end to start, or both.*/
     -ms-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-animation-timing-function: ease-in-out;
+<<<<<<< HEAD
     animation-timing-function: ease-in-out;
   }
 
   40%, 80% {
+=======
+    animation-timing-function: ease-in-out
+  }
+  40%,
+  80% {
+>>>>>>> refs/remotes/origin/master
     -webkit-transform: rotate3d(0, 0, 1, 60deg);
     -ms-transform: rotate3d(0, 0, 1, 60deg);
     transform: rotate3d(0, 0, 1, 60deg);
@@ -3684,19 +5664,29 @@ or from end to start, or both.*/
     transform-origin: bottom left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     -webkit-transform: translate3d(0, 700px, 0);
     -ms-transform: translate3d(0, 700px, 0);
     transform: translate3d(0, 700px, 0);
+<<<<<<< HEAD
     opacity: 0;
+=======
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .hinge {
   -webkit-animation-name: hinge;
+<<<<<<< HEAD
   animation-name: hinge;
 }
 
@@ -3712,10 +5702,16 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: hinge
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes rollIn {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+<<<<<<< HEAD
     transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
   }
 
@@ -3723,6 +5719,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+=======
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3731,19 +5735,29 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
     -ms-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+<<<<<<< HEAD
     transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
   }
 
+=======
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
+<<<<<<< HEAD
     transform: none;
+=======
+    transform: none
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rollIn {
   -webkit-animation-name: rollIn;
+<<<<<<< HEAD
   animation-name: rollIn;
 }
 
@@ -3768,24 +5782,47 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
     transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+=======
+  animation-name: rollIn
+}
+
+@-webkit-keyframes rollOut {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes rollOut {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
     -ms-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+<<<<<<< HEAD
     transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+=======
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .rollOut {
   -webkit-animation-name: rollOut;
+<<<<<<< HEAD
   animation-name: rollOut;
 }
 
@@ -3801,15 +5838,27 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: rollOut
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
+<<<<<<< HEAD
     transform: scale3d(.3, .3, .3);
   }
 
   50% {
     opacity: 1;
+=======
+    transform: scale3d(.3, .3, .3)
+  }
+  50% {
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3818,16 +5867,24 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
     -ms-transform: scale3d(.3, .3, .3);
+<<<<<<< HEAD
     transform: scale3d(.3, .3, .3);
   }
 
   50% {
     opacity: 1;
+=======
+    transform: scale3d(.3, .3, .3)
+  }
+  50% {
+    opacity: 1
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomIn {
   -webkit-animation-name: zoomIn;
+<<<<<<< HEAD
   animation-name: zoomIn;
 }
 
@@ -3843,21 +5900,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomIn
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomInDown {
   0% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3868,21 +5939,31 @@ or from end to start, or both.*/
     -ms-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomInDown {
   -webkit-animation-name: zoomInDown;
+<<<<<<< HEAD
   animation-name: zoomInDown;
 }
 
@@ -3898,21 +5979,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomInDown
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomInLeft {
   0% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3923,21 +6018,31 @@ or from end to start, or both.*/
     -ms-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomInLeft {
   -webkit-animation-name: zoomInLeft;
+<<<<<<< HEAD
   animation-name: zoomInLeft;
 }
 
@@ -3953,21 +6058,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomInLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomInRight {
   0% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -3978,21 +6097,31 @@ or from end to start, or both.*/
     -ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomInRight {
   -webkit-animation-name: zoomInRight;
+<<<<<<< HEAD
   animation-name: zoomInRight;
 }
 
@@ -4008,21 +6137,35 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomInRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomInUp {
   0% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4033,21 +6176,31 @@ or from end to start, or both.*/
     -ms-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomInUp {
   -webkit-animation-name: zoomInUp;
+<<<<<<< HEAD
   animation-name: zoomInUp;
 }
 
@@ -4076,28 +6229,57 @@ or from end to start, or both.*/
 
   100% {
     opacity: 0;
+=======
+  animation-name: zoomInUp
+}
+
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+  100% {
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 @keyframes zoomOut {
   0% {
+<<<<<<< HEAD
     opacity: 1;
   }
 
+=======
+    opacity: 1
+  }
+>>>>>>> refs/remotes/origin/master
   50% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
     -ms-transform: scale3d(.3, .3, .3);
+<<<<<<< HEAD
     transform: scale3d(.3, .3, .3);
   }
 
   100% {
     opacity: 0;
+=======
+    transform: scale3d(.3, .3, .3)
+  }
+  100% {
+    opacity: 0
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomOut {
   -webkit-animation-name: zoomOut;
+<<<<<<< HEAD
   animation-name: zoomOut;
 }
 
@@ -4113,15 +6295,25 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomOut
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomOutDown {
   40% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
@@ -4129,7 +6321,11 @@ or from end to start, or both.*/
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4140,9 +6336,14 @@ or from end to start, or both.*/
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
@@ -4152,12 +6353,17 @@ or from end to start, or both.*/
     -ms-transform-origin: center bottom;
     transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomOutDown {
   -webkit-animation-name: zoomOutDown;
+<<<<<<< HEAD
   animation-name: zoomOutDown;
 }
 
@@ -4173,19 +6379,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomOutDown
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomOutLeft {
   40% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+<<<<<<< HEAD
     transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
   }
 
+=======
+    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale(.1) translate3d(-2000px, 0, 0);
     transform: scale(.1) translate3d(-2000px, 0, 0);
     -webkit-transform-origin: left center;
+<<<<<<< HEAD
     transform-origin: left center;
+=======
+    transform-origin: left center
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4194,9 +6414,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+<<<<<<< HEAD
     transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
   }
 
+=======
+    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale(.1) translate3d(-2000px, 0, 0);
@@ -4204,12 +6429,17 @@ or from end to start, or both.*/
     transform: scale(.1) translate3d(-2000px, 0, 0);
     -webkit-transform-origin: left center;
     -ms-transform-origin: left center;
+<<<<<<< HEAD
     transform-origin: left center;
+=======
+    transform-origin: left center
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomOutLeft {
   -webkit-animation-name: zoomOutLeft;
+<<<<<<< HEAD
   animation-name: zoomOutLeft;
 }
 
@@ -4225,19 +6455,33 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomOutLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomOutRight {
   40% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+<<<<<<< HEAD
     transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
   }
 
+=======
+    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale(.1) translate3d(2000px, 0, 0);
     transform: scale(.1) translate3d(2000px, 0, 0);
     -webkit-transform-origin: right center;
+<<<<<<< HEAD
     transform-origin: right center;
+=======
+    transform-origin: right center
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4246,9 +6490,14 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+<<<<<<< HEAD
     transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
   }
 
+=======
+    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale(.1) translate3d(2000px, 0, 0);
@@ -4256,12 +6505,17 @@ or from end to start, or both.*/
     transform: scale(.1) translate3d(2000px, 0, 0);
     -webkit-transform-origin: right center;
     -ms-transform-origin: right center;
+<<<<<<< HEAD
     transform-origin: right center;
+=======
+    transform-origin: right center
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomOutRight {
   -webkit-animation-name: zoomOutRight;
+<<<<<<< HEAD
   animation-name: zoomOutRight;
 }
 
@@ -4277,15 +6531,25 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomOutRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes zoomOutUp {
   40% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
@@ -4293,7 +6557,11 @@ or from end to start, or both.*/
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4304,9 +6572,14 @@ or from end to start, or both.*/
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
+=======
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
@@ -4316,12 +6589,17 @@ or from end to start, or both.*/
     -ms-transform-origin: center bottom;
     transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+<<<<<<< HEAD
     animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+=======
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .zoomOutUp {
   -webkit-animation-name: zoomOutUp;
+<<<<<<< HEAD
   animation-name: zoomOutUp;
 }
 
@@ -4337,16 +6615,29 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: zoomOutUp
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes slideInDown {
   0% {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4355,6 +6646,7 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, -100%, 0);
     -ms-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
@@ -4362,11 +6654,20 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideInDown {
   -webkit-animation-name: slideInDown;
+<<<<<<< HEAD
   animation-name: slideInDown;
 }
 
@@ -4382,16 +6683,29 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: slideInDown
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes slideInLeft {
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4400,6 +6714,7 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
@@ -4407,11 +6722,20 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
+<<<<<<< HEAD
   animation-name: slideInLeft;
 }
 
@@ -4427,16 +6751,29 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: slideInLeft
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes slideInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4445,6 +6782,7 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
@@ -4452,11 +6790,20 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideInRight {
   -webkit-animation-name: slideInRight;
+<<<<<<< HEAD
   animation-name: slideInRight;
 }
 
@@ -4472,16 +6819,29 @@ or from end to start, or both.*/
  *@license MIT
  */
 
+=======
+  animation-name: slideInRight
+}
+
+>>>>>>> refs/remotes/origin/master
 @-webkit-keyframes slideInUp {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4490,6 +6850,7 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+<<<<<<< HEAD
     visibility: visible;
   }
 
@@ -4497,11 +6858,20 @@ or from end to start, or both.*/
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+=======
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideInUp {
   -webkit-animation-name: slideInUp;
+<<<<<<< HEAD
   animation-name: slideInUp;
 }
 
@@ -4527,6 +6897,20 @@ or from end to start, or both.*/
     visibility: hidden;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+=======
+  animation-name: slideInUp
+}
+
+@-webkit-keyframes slideOutDown {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4534,19 +6918,29 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 0, 0);
   }
 
+=======
+    transform: translate3d(0, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 100%, 0);
+=======
+    transform: translate3d(0, 100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideOutDown {
   -webkit-animation-name: slideOutDown;
+<<<<<<< HEAD
   animation-name: slideOutDown;
 }
 
@@ -4572,6 +6966,20 @@ or from end to start, or both.*/
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+=======
+  animation-name: slideOutDown
+}
+
+@-webkit-keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4579,19 +6987,29 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 0, 0);
   }
 
+=======
+    transform: translate3d(0, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(-100%, 0, 0);
+=======
+    transform: translate3d(-100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideOutLeft {
   -webkit-animation-name: slideOutLeft;
+<<<<<<< HEAD
   animation-name: slideOutLeft;
 }
 
@@ -4617,6 +7035,20 @@ or from end to start, or both.*/
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+=======
+  animation-name: slideOutLeft
+}
+
+@-webkit-keyframes slideOutRight {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4624,19 +7056,29 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 0, 0);
   }
 
+=======
+    transform: translate3d(0, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(100%, 0, 0);
+=======
+    transform: translate3d(100%, 0, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideOutRight {
   -webkit-animation-name: slideOutRight;
+<<<<<<< HEAD
   animation-name: slideOutRight;
 }
 
@@ -4662,6 +7104,20 @@ or from end to start, or both.*/
     visibility: hidden;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+=======
+  animation-name: slideOutRight
+}
+
+@-webkit-keyframes slideOutUp {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -4669,18 +7125,32 @@ or from end to start, or both.*/
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     transform: translate3d(0, 0, 0);
   }
 
+=======
+    transform: translate3d(0, 0, 0)
+  }
+>>>>>>> refs/remotes/origin/master
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(0, -100%, 0);
     -ms-transform: translate3d(0, -100%, 0);
+<<<<<<< HEAD
     transform: translate3d(0, -100%, 0);
+=======
+    transform: translate3d(0, -100%, 0)
+>>>>>>> refs/remotes/origin/master
   }
 }
 
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
+<<<<<<< HEAD
   animation-name: slideOutUp;
 }
+=======
+  animation-name: slideOutUp
+}
+>>>>>>> refs/remotes/origin/master

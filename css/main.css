@@ -109,6 +109,10 @@ header {
 
 #flowerVidCanvas{
     opacity:.1;
+<<<<<<< HEAD
+=======
+    display:inline-block;
+>>>>>>> refs/remotes/origin/master
 }
 
 #headerVid{
