@@ -59,12 +59,12 @@ header {
 
 #logo span.growS{
     transform: scale(1) !important;
-    color: hsl(135, 50%, 28%);
+    color: #246A36;
     transition: 1s ease-in-out;
 }
 
 #logo span.green{
-    color: hsl(135, 50%, 28%);
+    color: #246A36;
 }
 
 #logo canvas{

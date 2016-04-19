@@ -3,6 +3,7 @@ function init() {
         initSciss();
         cutLogoAnim();
         flowerVidCanvas();
+        leafCanvas();
     } else if (window.jQuery) {
         noCanvasLogo();
     } else if (Modernizr.csstransitions) {
