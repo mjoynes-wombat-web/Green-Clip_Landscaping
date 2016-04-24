@@ -6,53 +6,70 @@
 
     <title>Green Clip: Landscaping</title>
 
-    <title>Green Clip: Lawn Care</title>
+    <!--Load JavaScript Libraries-->
+    <script type="text/javascript" src="lib/modernizr.js"></script>                                                     <!--Load Modernizr Library-->
+    <script type="text/javascript" src="lib/createjs-2015.11.26.min.js"></script>                                       <!--Load Create.JS Library-->
+    <script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>                                              <!--Load jQuery Library-->
+    <script type="text/javascript" src="lib/anijs-min.js"></script>                                                     <!--Load Ani.JS Library-->
+    <script type="text/javascript" src="lib/Chart.js"></script>                                                         <!--Load Chart.JS Library-->
 
+    <!--Load JavaScript Scripts-->
+    <script type="text/javascript" src="js/scissors.js"></script>                                                       <!--Load Scissors Canvas animation created in Adobe Animate CC-->
+    <script type="text/javascript" src="js/script.js"></script>                                                         <!--Load main script-->
+    <script type="text/javascript" src="js/flowerVidCanvas.js"></script>                                                <!--Load flower video canvas render for header-->
+    <script type="text/javascript" src="js/waterUsageChart.js"></script>                                                <!--Load water chart script-->
+    <script type="text/javascript" src="js/leafCanvas.js"></script>                                                     <!--Load leaf canvas illustration for footer-->
 
-    <script type="text/javascript" src="lib/modernizr.js"></script>
-    <script type="text/javascript" src="lib/createjs-2015.11.26.min.js"></script>
-    <script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="lib/anijs-min.js"></script>
-
-    <script type="text/javascript" src="js/scissors.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/leafCanvas.js"></script>
-    <script type="text/javascript" src="js/flowerVidCanvas.js"></script>
-
-    <link href='https://fonts.googleapis.com/css?family=Pacifico|Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="lib/normalize.css">
-    <link type="text/css" rel="stylesheet" href="lib/anicollection.css">
-    <link type="text/css" rel="stylesheet" href="css/newAnijs.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--Load CSS Resources-->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|Josefin+Sans:400,600,700' rel='stylesheet'
+          type='text/css'>                                                                                              <!--Load fonts from Google Fonts-->
+    <link rel="stylesheet" type="text/css" href="lib/normalize.css">                                                    <!--Load Normalize CSS-->
+    <link type="text/css" rel="stylesheet" href="lib/anicollection.css">                                                <!--Load Ani.JS CSS Animations-->
+    <link type="text/css" rel="stylesheet" href="css/newAnijs.css">                                                     <!--Custom Ani.JS CSS Animations-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">                                                         <!--Load main css-->
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1 id="logo">Green Clip<span>s</span>
-                <canvas id="scissorsCanvas" width="75" height="94"></canvas>
-            </h1>
-            <h4 id="logoTag">Landscaping</h4>
-            <h4 id="phoneNum">503.252.1684</h4>
-        </header>
+<div class="wrapper">
+    <header>
+        <h1 id="logo">Green Clip<span>s</span>
+            <canvas id="scissorsCanvas" width="75" height="94"></canvas>
+        </h1>
+        <h4 id="logoTag">Landscaping</h4>
+        <h4 id="phoneNum">503.252.1684</h4>
         <section id="headerVid">
             <video class="hide" id='flwVid'>
-            
+
                 <source src="vid/marguerite_hd_stock_video_480p.mp4" type="video/mp4"/>
-		        <source src="vid/marguerite_hd_stock_video_480p.ogv" type="video/ogg"/>
-                
-                
-                HTML5 Video is not suported.
+                <source src="vid/marguerite_hd_stock_video_480p.ogv" type="video/ogg"/>
+
+                HTML5 Video is not supported.
             </video>
             <canvas id="flowerVidCanvas" width="1000" height="180"></canvas>
         </section>
-        <main>
+    </header>
+    <main>
+        <section>
+            <h2>Eco Friendly & Money Saving</h2>
+            <p>We provide eco-friendly yard maintenance that will save you money by using long term maintenance plans and by planting drought resistant plants, shrubs and trees. Our organic fertilizers, pesticides and pest deterrent treatments are pet and child friendly and have low environmental impact.</p>
+        </section>
+        <section id="waterConsumption">
+            <h2>Water Consumption</h2>
+            <p>We aim to help our clients save money by reducing the water needed to maintain their yard. We have reduced our customers water consumption by an average of</p>
+            <canvas id="waterChart" width="920" height="300">
+                <img src="img/water-usage.png" alt="Water Usage Chart"/>
+            </canvas>
+        </section>
+        <section class="imageGallery">
             
-        </main>
-        <footer>
-            <canvas id="leaf" width="320" height="170"></canvas>
-        </footer>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <canvas id="leaf" width="320" height="170">
+            <img src="img/leaf.png" alt="Leaf"/>
+        </canvas>
+    </footer>
+</div>
 </body>
 
 </html>

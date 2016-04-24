@@ -5,7 +5,7 @@ body{
 }
 
 .wrapper{
-    width:1000px;
+    width:1040px;
     margin:0 auto;
 }
 
@@ -27,10 +27,22 @@ h1{
     font-size:3.8rem;
 }
 
+h2{
+    font-size:2.5rem;
+    font-weight:normal;
+    line-height:3rem;
+    margin: .7rem 0;
+}
+
 
 h4{
     font-size:2.44rem;
     font-weight:900;
+}
+
+p{
+    font-size:1.4rem;
+    padding-left:.5rem;
 }
 
 .hide{
@@ -38,15 +50,16 @@ h4{
 }
 
 header {
-    padding:10px 20px 20px 20px;
+    padding:26px 0 3px 0;
     position: relative;
-    height:157px
+    height:157px;
 }
 
 #logo{
     text-shadow: .3rem .3rem .5rem rgba(0, 0, 0, .4);
     position: relative;
-    margin:0 0 0 30px;
+    margin:0 0 0 50px;
+    line-height:5rem;
 }
 
 #logo span{
@@ -54,7 +67,7 @@ header {
     z-index: 4;
     display: inline-block;
     line-height: 40px;
-    bottom: 32px;
+    bottom: 18px;
 }
 
 #logo span.growS{
@@ -69,14 +82,14 @@ header {
 
 #logo canvas{
     position:absolute;
-    top:36px;
+    top:23px;
     left:237px;
 }
 
 #logoTag{
     display: none;
-    margin:-10px 0 0 47px;
-    padding:5px 20px;
+    margin:0 0 0 67px;
+    padding:5px 20px 0 20px;
     border-top: 2px solid #b0b3b5;
 }
 
@@ -97,7 +110,7 @@ header {
 #phoneNum{
     position:absolute;
     right:60px;
-    top:70px;
+    top:65px;
     font-size:3rem;
     margin:0;
 }
@@ -105,20 +118,27 @@ header {
 #headerVid{
     border-top:3px solid #b0b3b5;
     border-bottom: 3px solid #b0b3b5;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    z-index:-10;
 }
 
 #flowerVidCanvas{
     opacity:.1;
-<<<<<<< HEAD
-=======
-    display:inline-block;
->>>>>>> refs/remotes/origin/master
+    display:block;
 }
 
-#headerVid{
-    margin:0;
-    padding:0;
-    top:-202px;
-    position:relative;
-    z-index:-4;
+.wrapper > main{
+    margin:40px auto;
+    width:940px;
+    background-color: #e1e4e6;
+    border-radius: 10px;
+    padding:20px;
+}
+
+main > section:not(:first-of-type) > h2 {
+    margin-top:1.9rem;
 }

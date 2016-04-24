@@ -1,8 +1,6 @@
 window.leafCanvas = function () {
     var leafCan = document.getElementById('leaf');
 
-    console.log(leafCan);
-
     var leafStage = new createjs.Stage(leafCan);
 
     var leaf = new createjs.Shape();

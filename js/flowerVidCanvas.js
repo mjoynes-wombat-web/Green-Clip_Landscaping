@@ -13,4 +13,4 @@ window.flowerVidCanvas = function(){
                 flwVidCtx.drawImage(flwVid, 0, 125, 852, 162, 0, 0, 1000, 190);
 
             }, 10);
-}
+};

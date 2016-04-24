@@ -4,8 +4,9 @@ function init() {
         cutLogoAnim();
         flowerVidCanvas();
         leafCanvas();
+        waterChartInit();
     } else if (window.jQuery) {
-        noCanvasLogo();
+        noCanvas();
     } else if (Modernizr.csstransitions) {
         nojQuery();
     } else {
@@ -13,8 +14,8 @@ function init() {
     }
 }
 
-/******SCIRSSORS ANIMATION FROM ADOBE ANIMATE CC******/
-//Initilization function for Scissors Animation
+/******SCISSORS ANIMATION FROM ADOBE ANIMATE CC******/
+//Initialization function for Scissors Animation
 function initSciss() {
     //Variables for Scissors Animation
     var scissCan, scissStage, scissRoot;
@@ -30,53 +31,61 @@ function initSciss() {
         createjs.Ticker.setFPS(lib.properties.fps); //Get the FPS from the scissors.js file.
         createjs.Ticker.addEventListener("tick", scissStage); //Setup the FPS ticker listner.
     }, 600)
-};
+}
 
 /********ANIMATION FOR S GETTING CUT AT THE END OF LOGO********/
 function cutLogoAnim() {
+    var logo = $('#logo'),
+        logoCan = logo.children('canvas'),
+        logoS = logo.children('span');
+
     setTimeout(function () { //1.2second timeout before running 'out' animations on s and scissors canvas.
-        $('#logo span').addClass('hingeBottomLeft animated'); //Add Ani.JS animations to 's' to make it drop.
-        $('#logo canvas').addClass('zoomOutRight animated'); //Add Ani.JS animation to scissors canvas to zoom out right.
-    }, 1200)
+        logoS.addClass('hingeBottomLeft animated'); //Add Ani.JS animations to 's' to make it drop.
+        logoCan.addClass('zoomOutRight animated'); //Add Ani.JS animation to scissors canvas to zoom out right.
+    }, 1200);
 
     setTimeout(function () { //1.2second timeout before running 'out' animations on s.
-        $('#logo span').addClass('hingeBottomLeft animated'); //Add Ani.JS animations to 's' to make it drop.
-        
-    }, 1200)
+        logoS.addClass('hingeBottomLeft animated'); //Add Ani.JS animations to 's' to make it drop.
+
+    }, 1200);
     
     setTimeout(function(){ //1.6second timeout before running 'out' animations on scissors canvas.
-        $('#logo canvas').addClass('zoomOutRight animated'); //Add Ani.JS animation to scissors canvas to zoom out right.
-    }, 1600)
+        logoCan.addClass('zoomOutRight animated'); //Add Ani.JS animation to scissors canvas to zoom out right.
+    }, 1600);
 
 
     setTimeout(function () { //3 second timeout before running prep for next animation.
-        $('#logo span').removeClass('hingeBottomLeft animated'); //Remove Ani.JS classes.
-        $('#logo span').attr('style', 'transform: scale(0); transform-origin:bottom left;') //Setup 's' for 'growing' animation
-    }, 3000)
+        logoS.removeClass('hingeBottomLeft animated'); //Remove Ani.JS classes.
+        logoS.attr('style', 'transform: scale(0); transform-origin:bottom left;'); //Setup 's' for 'growing' animation
+    }, 3000);
 
     setTimeout(function () { //3.005 second timeout before running 'grow' animation on s.
-        $('#logo span').addClass('growS'); //Add growS class which has animation for growing the 's' 
+        logoS.addClass('growS'); //Add growS class which has animation for growing the 's'
         $('#logoTag').fadeIn(800).css({
             'display': 'inline-block'
         }); //Fade in the logo tag line.
-    }, 3500)
-};
+    }, 3500);
+}
 
-function noCanvasLogo() {
-    console.log('test');
+function noCanvas() {
+    var logo = $('#logo'),
+        logoS = logo.children('span');
+    
     $('#headerVid').html('<img style="opacity: .1;" src="img/flower.jpg" alt="daisy"/>');
-    $('#logo canvas').addClass('hide'); //Hide the logo canvas.
+    logo.children('canvas').addClass('hide'); //Hide the logo canvas.
     $('#leftLeaf').addClass('hide');
     $('#rightLeaf').addClass('hide');
-    $('#logo span').attr('style', 'transform: scale(0); transform-origin:bottom left;') //Setup 's' for 'growing' animation.
+    logoS.attr('style', 'transform: scale(0); transform-origin:bottom left;'); //Setup 's' for 'growing' animation.
 
     setTimeout(function () {
-        $('#logo span').addClass('growS'); //Add growS class which has animation for growing the 's' 
+        logoS.addClass('growS'); //Add growS class which has animation for growing the 's'
         $('#logoTag').fadeIn(800).css({
             'display': 'inline-block'
         }); //Fade in the logo tag line.
-    }, 500)
-};
+    }, 500);
+
+    waterData();
+}
 
 function nojQuery() {
     document.getElementById('headerVid').innerHTML = '<img style="opacity: .1;" src="img/flower.jpg" alt="daisy"/>';
@@ -86,7 +95,7 @@ function nojQuery() {
     setTimeout(function () {
         document.getElementById('logoTag').classList.add('fadeIn');
     }, 600)
-};
+}
 
 function noCSSTrans(){
     document.getElementById('headerVid').innerHTML = '<img style="opacity: .1;" src="img/flower.jpg" alt="daisy"/>';
@@ -97,7 +106,7 @@ function noCSSTrans(){
 
 /********INITILIZATION FUNCTION FOR PROJECT*********/
 /*function init(){
-    initSciss();                                                        //Run the scissors animation initilization function.
+    initSciss();                                                        //Run the scissors animation initialization function.
     cutLogoAnim();                                                      //Run the cut logo animation function.
 }*/
 
