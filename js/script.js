@@ -5,6 +5,7 @@ function init() {
         flowerVidCanvas();
         leafCanvas();
         waterChartInit();
+        initImgGal();
     } else if (window.jQuery) {
         noCanvas();
     } else if (Modernizr.csstransitions) {
@@ -102,6 +103,30 @@ function noCSSTrans(){
     document.getElementById('logo').children[0].classList.add('green');
     document.getElementById('logoTag').classList.add('noCSSTrans');
 }
+
+function initImgGal(){
+    $('#imageGallery').lightGallery({
+        mode: 'lg-scale-up',
+        speed: 800,
+        download: false,
+        fullScreen: false,
+        zoom: false,
+        thumbnail:true,
+        animatedThumb: true
+    });
+
+    $('#imageGallery').children('a').hover(
+        function () {
+            $(this).addClass('pulse animated');
+        }, function(){
+        $(this).removeClass('pulse animated');
+        }
+    );
+
+    $('.lg-outer').removeClass('lg-thumb-open');
+}
+
+
 
 
 /********INITILIZATION FUNCTION FOR PROJECT*********/

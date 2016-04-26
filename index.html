@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
 
     <title>Green Clip: Landscaping</title>
+    <!--Load CSS Resources-->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|Josefin+Sans:400,600,700' rel='stylesheet'
+          type='text/css'>                                                                                              <!--Load fonts from Google Fonts-->
+    <link rel="stylesheet" type="text/css" href="lib/normalize.css">                                                    <!--Load Normalize CSS-->
+    <link type="text/css" rel="stylesheet" href="lib/anicollection.css">                                                <!--Load Ani.JS CSS Animations-->
+    <link type="text/css" rel="stylesheet" href="lib/lightgallery.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/lg-transitions.min.css">
 
-    <!--Load JavaScript Libraries-->
+    <!--Load Custom CSS-->
+    <link type="text/css" rel="stylesheet" href="css/newAnijs.css">                                                     <!--Custom Ani.JS CSS Animations-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">                                                         <!--Load main css-->
+
+    <!--Load JavaScript Resources-->
     <script type="text/javascript" src="lib/modernizr.js"></script>                                                     <!--Load Modernizr Library-->
     <script type="text/javascript" src="lib/createjs-2015.11.26.min.js"></script>                                       <!--Load Create.JS Library-->
     <script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>                                              <!--Load jQuery Library-->
     <script type="text/javascript" src="lib/anijs-min.js"></script>                                                     <!--Load Ani.JS Library-->
     <script type="text/javascript" src="lib/Chart.js"></script>                                                         <!--Load Chart.JS Library-->
 
-    <!--Load JavaScript Scripts-->
+    <!--Load Custom JavaScript-->
     <script type="text/javascript" src="js/scissors.js"></script>                                                       <!--Load Scissors Canvas animation created in Adobe Animate CC-->
     <script type="text/javascript" src="js/script.js"></script>                                                         <!--Load main script-->
     <script type="text/javascript" src="js/flowerVidCanvas.js"></script>                                                <!--Load flower video canvas render for header-->
     <script type="text/javascript" src="js/waterUsageChart.js"></script>                                                <!--Load water chart script-->
     <script type="text/javascript" src="js/leafCanvas.js"></script>                                                     <!--Load leaf canvas illustration for footer-->
 
-    <!--Load CSS Resources-->
-    <link href='https://fonts.googleapis.com/css?family=Pacifico|Josefin+Sans:400,600,700' rel='stylesheet'
-          type='text/css'>                                                                                              <!--Load fonts from Google Fonts-->
-    <link rel="stylesheet" type="text/css" href="lib/normalize.css">                                                    <!--Load Normalize CSS-->
-    <link type="text/css" rel="stylesheet" href="lib/anicollection.css">                                                <!--Load Ani.JS CSS Animations-->
-    <link type="text/css" rel="stylesheet" href="css/newAnijs.css">                                                     <!--Custom Ani.JS CSS Animations-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">                                                         <!--Load main css-->
 </head>
 
 <body>
@@ -57,19 +61,31 @@
             <h2>Water Consumption</h2>
             <p>We aim to help our clients save money by reducing the water needed to maintain their yard. We have reduced our customers water consumption by an average of</p>
             <canvas id="waterChart" width="920" height="300">
-                <img src="img/water-usage.png" alt="Water Usage Chart"/>
+                <img src="img/water-usage.png" width="920" height="300" alt="Water Usage Chart"/>
             </canvas>
         </section>
-        <section class="imageGallery">
-            
+        <section id="showcase">
+            <h2>A Sample of Our Handiwork</h2>
+            <p>The gallery below is of several landscaping projects we have completed for our customers.</p>
+            <section id="imageGallery">
+                <a href="img/landscape/alpine-gravel-garden.jpg"><img src="img/landscape/alpine-gravel-garden_thumb.jpg" alt="Alpine Gravel Garden" width="304" height="228"></a>
+                <a href="img/landscape/cabin-in-the-woods.jpg"><img src="img/landscape/cabin-in-the-woods_thumb.jpg" alt="Cabin in the Woods" width="304" height="228"></a>
+                <a href="img/landscape/garden-bordered-in-stone.jpg"><img src="img/landscape/garden-bordered-in-stone_thumb.jpg" alt="A Garden Bordered in Stone" width="304" height="228"></a>
+                <a href="img/landscape/gravel-garden.jpg"><img src="img/landscape/gravel-garden_thumb.jpg" alt="A Gravel Garden" width="304" height="228"></a>
+                <a href="img/landscape/lush-backyard.jpg"><img src="img/landscape/lush-backyard_thumb.jpg" alt="A Lush Backyard" width="304" height="228"></a>
+                <a href="img/landscape/stepping-stones.jpg"><img src="img/landscape/stepping-stones_thumb.jpg" alt="Stepping Stones through the Grass" width="304" height="228"></a>
+            </section>
         </section>
     </main>
     <footer>
         <canvas id="leaf" width="320" height="170">
-            <img src="img/leaf.png" alt="Leaf"/>
+            <img src="img/leaf.png" alt="Leaf" width="320" height="170"/>
         </canvas>
     </footer>
 </div>
+<script type="text/javascript" src="lib/lightgallery.min.js"></script>
+<script type="text/javascript" src="lib/lg-thumbnail.min.js"></script>
+<script type="text/javascript" src="lib/lg-hash.min.js"></script>
 </body>
 
 </html>

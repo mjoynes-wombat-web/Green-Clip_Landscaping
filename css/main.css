@@ -1,6 +1,5 @@
 body{
     background: url(../img/retina_wood.jpg);
-    background-color:rgba(255,255,255,.5);
     font-family: 'Josefin Sans', Arial, sans-serif;
 }
 
@@ -141,4 +140,50 @@ header {
 
 main > section:not(:first-of-type) > h2 {
     margin-top:1.9rem;
+}
+
+#imageGallery a {
+    background-color:#000;
+    display:inline-block;
+    border-radius:.4rem;
+    font-size:0;
+    border: 3px solid white;
+    transition: box-shadow 1s ease-in;
+    margin-bottom:.3rem;
+}
+
+#imageGallery a:hover{
+    box-shadow: 0 0 2px 2px #917042;
+    transition: all .3s ease-out;
+}
+
+#imageGallery img{
+    border-radius:.19rem;
+    transition: opacity .3s ease-in;
+    display:inline-block;
+}
+
+#imageGallery img:hover{
+    transition: all .3s ease-in;
+    opacity:.8;
+}
+
+.lg-backdrop{
+    background: url(../img/retina_wood.jpg);
+}
+
+.lg-outer.lg-visible{
+    background-color:rgba(0,0,0,.6);
+}
+
+.lg-outer .lg-thumb-outer, .lg-outer .lg-toogle-thumb {
+    background-color:rgba(0,0,0,.9);
+}
+
+.lg-sub-html {
+    font-size:2rem;
+}
+
+.lg-outer .lg-thumb-item:hover, .lg-outer .lg-thumb-item.active{
+    border-color: #db8b23;
 }
