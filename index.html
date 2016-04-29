@@ -10,8 +10,8 @@
           type='text/css'>                                                                                              <!--Load fonts from Google Fonts-->
     <link rel="stylesheet" type="text/css" href="lib/normalize.css">                                                    <!--Load Normalize CSS-->
     <link type="text/css" rel="stylesheet" href="lib/anicollection.css">                                                <!--Load Ani.JS CSS Animations-->
-    <link type="text/css" rel="stylesheet" href="lib/lightgallery.min.css">
-    <link type="text/css" rel="stylesheet" href="lib/lg-transitions.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/lightgallery.min.css">                                             <!--Load Light Gallery CSS-->
+    <link type="text/css" rel="stylesheet" href="lib/lg-transitions.min.css">                                           <!--Load Light Gallery Transition Animations-->
 
     <!--Load Custom CSS-->
     <link type="text/css" rel="stylesheet" href="css/newAnijs.css">                                                     <!--Custom Ani.JS CSS Animations-->
@@ -23,6 +23,9 @@
     <script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>                                              <!--Load jQuery Library-->
     <script type="text/javascript" src="lib/anijs-min.js"></script>                                                     <!--Load Ani.JS Library-->
     <script type="text/javascript" src="lib/Chart.js"></script>                                                         <!--Load Chart.JS Library-->
+    <script type="text/javascript" src="lib/lightgallery.min.js"></script>                                              <!--Load Main Light Gallery Library-->
+    <script type="text/javascript" src="lib/lg-thumbnail.min.js"></script>                                              <!--Load Light Gallery Thumbnail Plugin-->
+    <script type="text/javascript" src="lib/lg-hash.min.js"></script>                                                   <!--Load Light Gallery Hash Plugin-->
 
     <!--Load Custom JavaScript-->
     <script type="text/javascript" src="js/scissors.js"></script>                                                       <!--Load Scissors Canvas animation created in Adobe Animate CC-->
@@ -34,13 +37,20 @@
 </head>
 
 <body>
+<!--MAIN WRAPPER-->
 <div class="wrapper">
+    <!--HEADER-->
     <header>
+        <!--LOGO-->
         <h1 id="logo">Green Clip<span>s</span>
             <canvas id="scissorsCanvas" width="75" height="94"></canvas>
         </h1>
         <h4 id="logoTag">Landscaping</h4>
+
+        <!--PHONE NUMBER-->
         <h4 id="phoneNum">503.252.1684</h4>
+
+        <!--HEADER VIDEO-->
         <section id="headerVid">
             <video class="hide" id='flwVid'>
 
@@ -49,56 +59,82 @@
 
                 HTML5 Video is not supported.
             </video>
-            <canvas id="flowerVidCanvas" width="1000" height="180"></canvas>
+            <canvas id="flowerVidCanvas" width="1000" height="180">
+                <img style="display:none;" src="img/flower.jpg" alt="Daisy Background"/>
+            </canvas>
         </section>
     </header>
+
+    <!--MAIN CONTENT-->
     <main>
+        <!--ECO FRIENDLY SECTION-->
         <section>
             <h2>Eco Friendly & Money Saving</h2>
             <p>We provide eco-friendly yard maintenance that will save you money by using long term maintenance plans and by planting drought resistant plants, shrubs and trees. Our organic fertilizers, pesticides and pest deterrent treatments are pet and child friendly and have low environmental impact.</p>
         </section>
+        <!--WATER CHART SECTION-->
         <section id="waterConsumption">
             <h2>Water Consumption</h2>
             <p>We aim to help our clients save money by reducing the water needed to maintain their yard. We have reduced our customers water consumption by an average of</p>
-            <canvas id="waterChart" width="920" height="300">
-                <img src="img/water-usage.png" width="920" height="300" alt="Water Usage Chart"/>
+            <canvas id="waterChart" width="912" height="350">
+                <img src="img/water-usage.png" width="912" height="350" alt="Water Usage Chart"/>
             </canvas>
         </section>
+        <!--IMAGE GALLERY SECTION-->
         <section id="showcase">
             <h2>A Sample of Our Handiwork</h2>
             <p>The gallery below is of several landscaping projects we have completed for our customers.</p>
             <section id="imageGallery">
-                <a href="img/landscape/alpine-gravel-garden.jpg"><img src="img/landscape/alpine-gravel-garden_thumb.jpg" alt="Alpine Gravel Garden" width="304" height="228"></a>
-                <a href="img/landscape/cabin-in-the-woods.jpg"><img src="img/landscape/cabin-in-the-woods_thumb.jpg" alt="Cabin in the Woods" width="304" height="228"></a>
-                <a href="img/landscape/garden-bordered-in-stone.jpg"><img src="img/landscape/garden-bordered-in-stone_thumb.jpg" alt="A Garden Bordered in Stone" width="304" height="228"></a>
-                <a href="img/landscape/gravel-garden.jpg"><img src="img/landscape/gravel-garden_thumb.jpg" alt="A Gravel Garden" width="304" height="228"></a>
-                <a href="img/landscape/lush-backyard.jpg"><img src="img/landscape/lush-backyard_thumb.jpg" alt="A Lush Backyard" width="304" height="228"></a>
-                <a href="img/landscape/stepping-stones.jpg"><img src="img/landscape/stepping-stones_thumb.jpg" alt="Stepping Stones through the Grass" width="304" height="228"></a>
+                <a href="img/landscape/alpine-gravel-garden.jpg"><img src="img/landscape/alpine-gravel-garden_thumb.jpg" alt="Alpine Gravel Garden"></a>
+                <a href="img/landscape/cabin-in-the-woods.jpg"><img src="img/landscape/cabin-in-the-woods_thumb.jpg" alt="Cabin in the Woods"></a>
+                <a href="img/landscape/garden-bordered-in-stone.jpg"><img src="img/landscape/garden-bordered-in-stone_thumb.jpg" alt="A Garden Bordered in Stone"></a>
+                <a href="img/landscape/gravel-garden.jpg"><img src="img/landscape/gravel-garden_thumb.jpg" alt="A Gravel Garden"></a>
+                <a href="img/landscape/lush-backyard.jpg"><img src="img/landscape/lush-backyard_thumb.jpg" alt="A Lush Backyard"></a>
+                <a href="img/landscape/stepping-stones.jpg"><img src="img/landscape/stepping-stones_thumb.jpg" alt="Stepping Stones through the Grass"></a>
             </section>
         </section>
     </main>
+
+    <!--FOOTER-->
     <footer>
+        <!--ADDRESS-->
+        <section>
+            <h3>Address</h3>
+            <p>504 E. Maple Ave.</p>
+            <p>Ellensburg, WA 98926</p>
+        </section>
+
+        <!--PHONE NUMBER-->
+        <section>
+            <h3>Phone</h3>
+            <p>503.252.1684</p>
+        </section>
+
+        <!--EMAIL-->
+        <section>
+            <h3>Email</h3>
+            <p><a href="mailto:a@test.com">service@greenclips.com</a></p>
+        </section>
+
+        <!--LEAF CANVAS-->
         <canvas id="leaf" width="320" height="170">
             <img src="img/leaf.png" alt="Leaf" width="320" height="170"/>
         </canvas>
     </footer>
 </div>
-<script type="text/javascript" src="lib/lightgallery.min.js"></script>
-<script type="text/javascript" src="lib/lg-thumbnail.min.js"></script>
-<script type="text/javascript" src="lib/lg-hash.min.js"></script>
 </body>
 
 </html>
 
-<!--TODO:Homepage-->
+<!--TODO:[x]Homepage-->
 <!--TODO:[x]jQuery Effect 1::cutS function in script file in third timeout effecting the #logoTag-->
-<!--TODO:jQuery Effect 2-->
+<!--TODO:[x}jQuery Effect 2-->
 <!--TODO:[x]Check compatibility with Modernizr::Mondernizr check in init function of the script file.-->
 <!--TODO:Provide legacy content-->
 
 
-<!--TODO:Animated Bar Chart or Data Visualization-->
-<!--TODO:Interactive Image Gallery-->
+<!--TODO:[x]Animated Bar Chart or Data Visualization-->
+<!--TODO:[x]Interactive Image Gallery-->
 <!--TODO:[x]HTML5 Video or Audio::Underneath header element. Used for loading the video of the daisies.-->
 <!--TODO:[x]HTML5 Canvas 1::Underneath header element. Renders video of daisies behind header.-->
 <!--TODO:[x]HTML5 Canvas 2::In footer. Renders leaf.-->
